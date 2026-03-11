@@ -284,29 +284,7 @@ OR
 curl http://localhost:30007
 ```
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant Killercoda
-    participant K8s as Kubernetes
-    participant Pod
-    
-    User->>Killercoda: Open playground
-    Killercoda->>K8s: Cluster ready
-    User->>K8s: kubectl apply -f deployment.yml
-    K8s->>Pod: Create nginx pod
-    Pod->>Pod: Running
-    User->>K8s: kubectl apply -f service.yml
-    K8s->>K8s: Create NodePort service
-    User->>Killercoda: Click Traffic/Ports → 30007
-    Killercoda->>Pod: HTTP request
-    Pod->>User: Nginx welcome page
-**Expected Output:**
-You should see the default nginx welcome page!
-
----
-
-## 🎯 Complete Bootcamp Demo Flow
+## 🎯 Complete Flow
 
 Follow this exact order during presentation:
 
