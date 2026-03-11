@@ -1,4 +1,4 @@
-# Kubernetes Bootcamp - Deploy Nginx Web Server
+# Kubernetes - Deploy Nginx Web Server
 
 Simple step-by-step guide to deploy and expose an nginx web application on Kubernetes.
 
